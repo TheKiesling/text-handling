@@ -15,3 +15,8 @@ class TextHandling(Exception):
             raise TypeError("s must be a string")
         cleaned = ''.join(char.lower() for char in s if char.isalnum())
         return cleaned == cleaned[::-1]
+
+    def to_upper(s):
+        if not isinstance(s, str):
+            raise TypeError("s must be a string")
+        return s.upper()
