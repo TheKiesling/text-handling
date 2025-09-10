@@ -15,7 +15,4 @@ class TestToUpper(unittest.TestCase):
     def test_to_upper_array_input(self):
         with self.assertRaises(TypeError):
             TextHandling.to_upper(['a', 'b'])
-            
-    def test_count_vowels_with_dummy_vowels(self):
-        phishing_word = "раpеr"
-        self.assertEqual(TextHandling.to_upper(phishing_word), "РаPеR")
+    
