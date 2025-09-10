@@ -1,4 +1,4 @@
 
 class TextHandling(Exception):
     def reverse(s: str) -> str:
-        return s[::-2]
+        return s[::-1]
