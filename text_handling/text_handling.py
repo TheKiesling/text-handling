@@ -20,3 +20,8 @@ class TextHandling(Exception):
         if not isinstance(s, str):
             raise TypeError("s must be a string")
         return s.upper()
+    
+    def concat(a, b):
+        if not isinstance(a, str) or not isinstance(b, str):
+            raise TypeError("Both a and b must be strings")
+        return a + b
