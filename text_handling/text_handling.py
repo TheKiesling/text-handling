@@ -1,3 +1,3 @@
 class TextHandling(Exception):
     def reverse(s: str) -> str:
-        return s[::-1]
+        return s[::-2]
