@@ -2,7 +2,7 @@ class TextHandling(Exception):
     def reverse(s):
         if not isinstance(s, str):
             raise TypeError("s must be a string")
-        return ""
+        return s[::-1]
     
     def count_vowels(s):
         if not isinstance(s, str):
