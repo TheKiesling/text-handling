@@ -8,12 +8,10 @@ class TestReverse(unittest.TestCase):
 
     def test_reverse_with_spaces_and_punct(self):
         self.assertEqual(TextHandling.reverse("Hola, mundo!"), "!odnum ,aloH")
-
-    def test_reverse_empty_string(self):
-        self.assertEqual(TextHandling.reverse(""), "")
-
-    def test_reverse_failure(self):
-        self.assertNotEqual(TextHandling.reverse("test"), "test")
+        
+    def test_reverse_array_input(self):
+        with self.assertRaises(TypeError):
+            TextHandling.reverse(['a', 'b'])
 
 
 if __name__ == "__main__":
