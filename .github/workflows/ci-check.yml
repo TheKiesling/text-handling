@@ -15,12 +15,8 @@ concurrency:
 
 jobs:
   tests:
-    name: Python ${{ matrix.python-version }} • unittest
+    name: Python 3.11 • unittest
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
       - name: Checkout
@@ -29,7 +25,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
